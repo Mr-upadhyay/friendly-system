@@ -8,6 +8,9 @@ const addTask = () => {
   });
 
   updateTodoList();
+
+  // Show the list when the button is clicked
+  document.getElementById("todo-list").classList.remove("hidden");
 };
 
 const updateTodoList = () => {
@@ -28,4 +31,5 @@ const updateTodoList = () => {
 
 document.getElementById("add-task-button").addEventListener("click", addTask);
 
+// Show the list when the page loads
 updateTodoList();
